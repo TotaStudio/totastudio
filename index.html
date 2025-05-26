@@ -1,105 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tota Studio by Pataro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tota studio</title>
   <style>
     body {
       background-color: black;
       color: red;
-      font-family: monospace;
-      margin: 0;
-      padding: 40px;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 40px 20px;
+      line-height: 1.6;
     }
-    .container {
-      max-width: 700px;
-      margin: auto;
+
+    h1, h2, h3 {
+      text-transform: lowercase;
     }
-    input, select, textarea, button {
-      display: block;
-      width: 100%;
-      margin: 10px 0;
-      padding: 8px;
-      background-color: black;
-      border: 1px solid red;
+
+    a {
       color: red;
-      font-family: monospace;
+      text-decoration: underline;
     }
-    button {
-      width: auto;
+
+    .section {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .box {
+      border: 1px solid red;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #111;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 15px 0;
+      border: 1px solid red;
+      background: black;
+      color: red;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    button, input[type="submit"] {
+      background: black;
+      color: red;
+      border: 1px solid red;
+      padding: 5px 15px;
+      font-family: 'Courier New', Courier, monospace;
       cursor: pointer;
     }
-    h1, h2, p, label {
-      margin: 20px 0 5px;
+
+    button:hover, input[type="submit"]:hover {
+      background: red;
+      color: black;
     }
-    .section {
-      margin-bottom: 30px;
-    }
-    .meta-section input {
-      margin-bottom: 5px;
-    }
+
     audio {
       width: 100%;
-      margin: 10px 0;
+      margin-bottom: 20px;
+      border: 1px solid red;
+    }
+
+    small {
+      display: block;
+      text-align: center;
+      font-size: 11px;
+      margin-top: 30px;
+      opacity: 0.6;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="section">
+
+    <small>[Play this to match the website vibe]</small>
     <audio controls>
-      <source src="your-audio-file.mp3" type="audio/mpeg">
+      <source src="your-audio.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
 
-    <h1>◎ hi, i’m pataro</h1>
+    <h3>◎ hi, i’m pataro</h3>
+
     <p>I run Tota Studio, where we help businesses grow faster using AI, automations, and growth hacks.</p>
     <p>We create solutions that either will make you money, save you money, or save you time.</p>
     <p>Here is the list of AI solutions, services, products, tools recommendations, tutorials, and free resources I created.</p>
 
-    <div class="section">
-      <h2>How to actually apply AI in your business</h2>
-      <input type="text" placeholder="">
-    </div>
+    <h3>How to actually apply AI in your business</h3>
+    <div class="box">🔗</div>
 
-    <div class="section">
-      <h2>AI audit -</h2>
-      <input type="text" placeholder="">
-    </div>
+    <h3>AI audit -</h3>
+    <div class="box">🔗</div>
 
-    <div class="section meta-section">
-      <h2>Easily track your meta ads (killer dashboard)</h2>
-      <input type="text" placeholder="">
-      <input type="text" placeholder="">
-      <input type="text" placeholder="">
-      <input type="text" placeholder="">
-      <input type="text" placeholder="">
-      <input type="text" placeholder="">
-      <input type="text" placeholder="">
-      <input type="text" placeholder="">
-      <input type="text" placeholder="">
-    </div>
+    <h3>Easily track your meta ads (killer dashboard)</h3>
+    <div class="box">🔗</div>
+    <div class="box">🔗</div>
+    <div class="box">🔗</div>
+    <div class="box">🔗</div>
+    <div class="box">🔗</div>
+    <div class="box">🔗</div>
+    <div class="box">🔗</div>
+    <div class="box">🔗</div>
 
-    <div class="section">
-      <h2>Work with me:</h2>
-      <input type="text" placeholder="Name">
-      <input type="email" placeholder="Email">
+    <h3>Work with me:</h3>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
       <input type="text" placeholder="Company">
       <select>
         <option>Budget</option>
-        <option value="<1k">Less than $1k</option>
-        <option value="1k-5k">$1k - $5k</option>
-        <option value=">5k">More than $5k</option>
+        <option>Less than $1k</option>
+        <option>$1k - $5k</option>
+        <option>$5k+</option>
       </select>
       <select>
         <option>Project type</option>
-        <option value="AI">AI / Automation</option>
-        <option value="dashboard">Dashboard / Tracking</option>
-        <option value="other">Other</option>
+        <option>Automation</option>
+        <option>AI Integration</option>
+        <option>Growth Strategy</option>
       </select>
-      <textarea placeholder="How can we help?"></textarea>
-      <button type="submit">Submit</button>
-    </div>
+      <textarea rows="4" placeholder="How can we help?"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+
+    <small>Condições e suporte</small>
+    <small>Criado com o Canva</small>
   </div>
 </body>
 </html>
